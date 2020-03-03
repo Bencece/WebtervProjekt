@@ -1,0 +1,1 @@
+Mappa a médiatartalmak tárolása.
