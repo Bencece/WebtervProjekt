@@ -1,0 +1,16 @@
+body {
+    background-color: lightgreen;
+}
+.header .content .footer{
+    margin: auto;
+    width: 80%;
+}
+.header{
+    background-color: aquamarine;
+}
+.content{
+    background-color: lightgray;
+}
+.footer{
+    background-color: aquamarine;
+}
