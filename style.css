@@ -23,13 +23,16 @@ ul {
     display: table;
 }
 li {
-    display: inline-block;
+    display: inline-flex;
     float: none;
 }
 li a {
     background-color: grey;
     color: white;
-    padding: 3px;
+    padding: 5px;
+    width: 90px;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
 }
 li a:hover{
     background-color: darkgray;
@@ -52,7 +55,7 @@ li a:hover{
     float: right;
 }
 .menu{
-    padding: 3px;
+    padding: 2px;
     background-color: grey;
 }
 .footer{
