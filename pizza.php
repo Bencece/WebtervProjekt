@@ -27,6 +27,6 @@
             <button>Kosárba</button>
         </div>
     </div>
-    <div class="footer">avasd</div>
+    <div class="footer">Pizza</div>
   </body>
 </html>

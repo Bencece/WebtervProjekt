@@ -10,7 +10,9 @@
       <h1 id="title">Pepe pizzéria</h1>
       <?php include "menu.php"; ?>
     </div>
-    <div class="content">asdf</div>
-    <div class="footer">avasd</div>
+    <div class="content">
+        <p>Kosarad</p>
+    </div>
+    <div class="footer">Pizza</div>
   </body>
 </html>
