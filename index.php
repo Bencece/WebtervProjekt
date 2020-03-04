@@ -6,6 +6,7 @@
   </head>
   <body>
     <div class="header">
+      <h1 id="title">Pepe pizzéria</h1>
       <nav class="menu">
         <ul>
           <li><a href="index.php">Főoldal</a></li>
