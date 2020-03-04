@@ -3,6 +3,7 @@
   <head>
     <title>Elérhetőség</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <?php include "meta.php"; ?>
   </head>
   <body>
     <div class="header">
