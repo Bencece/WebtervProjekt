@@ -42,6 +42,9 @@ li a {
 li a:hover{
     background-color: darkgray;
 }
+li a[href="login.php"]{
+    float: right;
+}
 .menu{
     padding: 2px;
     background-color: grey;

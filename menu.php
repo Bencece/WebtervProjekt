@@ -5,5 +5,6 @@
         <li><a href="cart.php">Kosár</a></li>
         <li><a href="prices.php">Áraink</a></li>
         <li><a href="contact.php">Elérhetőség</a></li>
+        <!-- <li><a href="login.php">Bejelentkezés</a></li> -->
     </ul>
 </nav>
