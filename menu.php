@@ -5,7 +5,7 @@
         <li><a href="cart.php" <?php print(activateIt("/WebtervProjekt/cart.php")); ?>>Kosár</a></li>
         <li><a href="prices.php" <?php print(activateIt("/WebtervProjekt/prices.php")); ?>>Áraink</a></li>
         <li><a href="contact.php" <?php print(activateIt("/WebtervProjekt/contact.php")); ?>>Elérhetőség</a></li>
-        <!-- <li><a href="login.php">Bejelentkezés</a></li> -->
+        <li id="loginButton"><a href="login.php">Bejelentkezés</a></li>
     </ul>
 </nav>
 <?php
