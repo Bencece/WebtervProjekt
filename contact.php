@@ -7,12 +7,21 @@
   </head>
   <body>
     <div class="header">
-      <h1 id="title">Pepe pizzéria</h1>
+		<!--Logo -->
+	 <div class="pepeholder">
+		<a href="index.php">
+			<img src="img\pepelogo2.png" align=left width="105px">
+			<h1 id="title">Pepe pizzéria</h1>
+		</a>
+	  </div>
       <?php include "menu.php"; ?>
     </div>
     <div class="content">
-        <p>Elérhetőségeink</p>
+        <h2>Elérhetőségeink</h2>
+		<h3>Telefon: 06/69-420-420</h3>
+		<h3>E-mail: pepepizza@pepepizza.com</h3>
+		
     </div>
-    <div class="footer">Pizza</div>
+    <div class="footer">Pepe Pizza<sup>®</sup> 2020</div>
   </body>
 </html>

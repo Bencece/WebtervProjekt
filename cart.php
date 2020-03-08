@@ -7,12 +7,18 @@
   </head>
   <body>
     <div class="header">
-      <h1 id="title">Pepe pizzéria</h1>
+		<!--Logo -->
+	  <div class="pepeholder">
+		<a href="index.php">
+			<img src="img\pepelogo2.png" align=left width="105px">
+			<h1 id="title">Pepe pizzéria</h1>
+		</a>
+	  </div>
       <?php include "menu.php"; ?>
     </div>
     <div class="content">
-        <p>Kosarad</p>
+        <p>Kosarad jelenleg üres!</p>
     </div>
-    <div class="footer">Pizza</div>
+    <div class="footer">Pepe Pizza<sup>®</sup> 2020</div>
   </body>
 </html>

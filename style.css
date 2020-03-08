@@ -20,8 +20,10 @@ body {
 }
 /*A cím beállításai*/
 #title{
-    font-family: cursive;
+    font-family: Arial;
 }
+
+
 /*A menü elemeinek szabályai*/
 ul {
     padding-right: 5px;
@@ -53,6 +55,7 @@ li a:hover{
 .menu{
     padding: 2px;
     background-color: grey;
+	border-radius: 4px;
 }
 /*A tartalom beállításai*/
 .content{
@@ -105,3 +108,73 @@ table caption{
 .footer{
     border-radius:0px 0px 10px 10px;
 }
+
+
+.forms{
+	min-width: 50%;
+	padding-top: 10px;
+	padding-left: 20px;
+	background-color: rgba(240, 240, 240, 0.8);
+	border-radius: 12px;
+	margin-right: 40px;
+}
+
+.submits{
+	border-radius: 6px;
+	min-height: 30px;
+	min-width: 40px;
+	color: black;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	background-color: rgba(200, 200, 200, 0.95);
+}
+.submits:active{
+	background-color: #559955;
+	color: white;
+}
+/*.submits:hover{
+	background-color: #559955;
+}*/
+.szoveg{
+	background-color: rgba(240, 240, 240, 0.9);
+	border-radius: 8px;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+
+.pepeholder{
+	background-color: rgba(240, 240, 240, 0.7);
+	border-radius: 10px;
+	min-height: 90px;
+	padding-left: 10px;
+	padding-top: 20px;
+	animation-name: anim1;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+.pepeholder a:link{
+	text-decoration: none!important;
+	color: black;
+}
+.pepeholder a:visited{
+	text-decoration: none!important;
+	color: black;
+}
+.pepeholder a:hover{
+	text-decoration: none!important;
+	color: black;
+}
+.pepeholder a:active{
+	text-decoration: none!important;
+	color: black;
+}
+@keyframes anim1{
+	0%   {background-color: rgba(240, 240, 240, 0.4);}
+	25%  {background-color: rgba(120, 120, 0, 0.4);}
+	50%  {background-color: rgba(0, 120, 0, 0.4);}
+	75%	 {background-color: rgba(200, 200, 200, 0.5);}
+	100% {background-color: rgba(240, 240, 240, 0.7);}
+}
+
