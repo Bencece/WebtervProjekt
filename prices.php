@@ -3,6 +3,7 @@
   <head>
     <title>Áraink</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" media="print" href="print.css">
     <?php include "meta.php"; ?>
   </head>
   <body>
@@ -10,7 +11,7 @@
 			<!--Logo -->
 	  <div class="pepeholder">
 		<a href="index.php">
-			<img src="img\pepelogo2.png" align=left width="105px">
+			<img src="img\pepelogo2.png" align="left" width="105px">
 			<h1 id="title">Pepe pizzéria</h1>
 		</a>
 	  </div>
@@ -18,7 +19,7 @@
     </div>
     <div class="content">
         <table>
-          <caption>Áraink</caption>
+          <caption>Alap Pizza Árak</caption>
           <thead>
             <tr>
               <td>Termék</td>
