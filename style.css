@@ -109,16 +109,6 @@ table caption{
     border-radius:0px 0px 10px 10px;
 }
 
-
-.forms{
-	min-width: 50%;
-	padding-top: 10px;
-	padding-left: 20px;
-	background-color: rgba(240, 240, 240, 0.8);
-	border-radius: 12px;
-	margin-right: 40px;
-}
-
 .submits{
 	border-radius: 6px;
 	min-height: 30px;
@@ -143,6 +133,26 @@ table caption{
 	padding-bottom: 20px;
 	padding-left: 10px;
 }
+.login{
+	margin-left: 20px; 
+	width: 500px;
+	background-color:#lightgrey; 
+}
+.register{
+	border-left:1px solid grey;
+	margin-right:50px;
+	padding-left:50px;
+}
+
+.forms{
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	background-color: rgba(240, 240, 240, 0.8);
+	border-radius: 12px;
+	margin-right: 40px;
+}
 
 .pepeholder{
 	background-color: rgba(240, 240, 240, 0.7);
@@ -151,7 +161,7 @@ table caption{
 	padding-left: 10px;
 	padding-top: 20px;
 	animation-name: anim1;
-	animation-duration: 5s;
+	animation-duration: 4s;
 	animation-iteration-count: infinite;
 }
 .pepeholder a:link{
@@ -176,5 +186,8 @@ table caption{
 	50%  {background-color: rgba(0, 120, 0, 0.4);}
 	75%	 {background-color: rgba(200, 200, 200, 0.5);}
 	100% {background-color: rgba(240, 240, 240, 0.7);}
+}
+img{
+	z-index: 3;
 }
 
