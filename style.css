@@ -8,7 +8,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 /*A fejléc, a tartalom és a láblécre vonatkozó szabályok*/
-.header, .content, .footer{
+.header, .footer{
     margin: auto;
     width: 80%;
     background-color: rgba(255, 255, 255, 0.8);  
@@ -107,13 +107,21 @@ li a:hover{
 	margin-right: 10px;
 }
 .menu{
-    padding: 2px;
     background-color: grey;
 	border-radius: 4px;
+	width: 20%;
 }
 /*A tartalom beállításai*/
+.contentBody{
+	margin: auto;
+	width: 80%;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.8);
+}
 .content{
-    color: #000;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 80%;
 }
 /*A pizzákat tartalmazó kis doboz stílusa*/
 .pizzaBox{
@@ -190,7 +198,6 @@ table caption{
 .login{
 	margin-left: 20px; 
 	width: 40%;
-	background-color: lightgrey; 
 }
 .register{
 	border-left:1px solid grey;
