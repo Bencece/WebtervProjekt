@@ -11,7 +11,7 @@
 <?php
     function activateIt($oldal){
         if($_SERVER['SCRIPT_NAME'] == $oldal){
-            return "style='background-color: darkgray';";
+            return "style='background-color: darkgray;'";
         }
     }
 ?>
