@@ -125,6 +125,9 @@ li a:hover{
 	background-color: rgba(255, 255, 255, 0.8);
 	width: 90%;
 }
+.content h1{
+	padding-left: 10px;
+}
 /*A pizzákat tartalmazó kis doboz stílusa*/
 .pizzaBox{
     background-color: #4e3913;
