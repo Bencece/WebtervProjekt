@@ -15,13 +15,14 @@
 			<h1 id="title">Pepe pizzéria</h1>
 		</a>
 	  </div>
-      <?php include "menu.php"; ?>
     </div>
-    <div class="content">
-        <h2>Elérhetőségeink</h2>
-		<h3>Telefon: 06/69-420-420</h3>
-		<h3>E-mail: pepepizza@pepepizza.com</h3>
-		
+    <div class="contentBody">
+      <?php include "menu.php"; ?>
+      <div class="content">
+          <h2>Elérhetőségeink</h2>
+      <h3>Telefon: 06/69-420-420</h3>
+      <h3>E-mail: pepepizza@pepepizza.com</h3>
+      </div>
     </div>
     <div class="footer">Pepe Pizza<sup>®</sup> 2020</div>
   </body>

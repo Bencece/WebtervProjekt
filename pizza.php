@@ -15,24 +15,26 @@
 			<h1 id="title">Pepe pizzéria</h1>
 		</a>
 	  </div>
-      <?php include "menu.php"; ?>
     </div>
-    <div class="content">
-        <div class="pizzaBox">
-            <img src="img\margherita.jpg"/>
-            <p>Margherita pizza</p>
-            <button>Kosárba</button>
-        </div>
-        <div class="pizzaBox">
-            <img src="img\prosciutto.jpg"/>
-            <p>Prosciutto pizza</p>
-            <button>Kosárba</button>
-        </div>
-        <div class="pizzaBox">
-            <img src="img\pepperoni.jpg"/>
-            <p>Pepperoni pizza</p>
-            <button>Kosárba</button>
-        </div>
+    <div class="contentBody">
+      <?php include "menu.php"; ?>
+      <div class="content">
+          <div class="pizzaBox">
+              <img src="img\margherita.jpg"/>
+              <p>Margherita pizza</p>
+              <button>Kosárba</button>
+          </div>
+          <div class="pizzaBox">
+              <img src="img\prosciutto.jpg"/>
+              <p>Prosciutto pizza</p>
+              <button>Kosárba</button>
+          </div>
+          <div class="pizzaBox">
+              <img src="img\pepperoni.jpg"/>
+              <p>Pepperoni pizza</p>
+              <button>Kosárba</button>
+          </div>
+      </div>
     </div>
     <div class="footer">Pepe Pizza<sup>®</sup> 2020</div>
   </body>
