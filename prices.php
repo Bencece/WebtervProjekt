@@ -11,7 +11,7 @@
 			<!--Logo -->
 	  <div class="pepeholder">
 		<a href="index.php">
-			<img src="img\pepelogo2.png" align="left" width="105px">
+			<img class="pepe" src="img\pepelogo2.png" align="left" width="105px">
 			<h1 id="title">Pepe pizzéria</h1>
 		</a>
 	  </div>
@@ -21,10 +21,13 @@
       <div class="content">
           <table>
             <caption>Alap Pizza Árak</caption>
+			<colgroup>
+				</col>
+			</colgroup>
             <thead>
               <tr>
                 <td>Termék</td>
-                <td>Mennyiség</td>
+                <td>Méret</td>
                 <td>Ár</td>
               </tr>
             </thead>
@@ -51,6 +54,7 @@
               </tr>
             </tfoot>
           </table>
+		  További árak hamarosan...
       </div>
     </div>
     <div class="footer">Pepe Pizza<sup>®</sup> 2020</div>
