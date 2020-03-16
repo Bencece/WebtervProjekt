@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" media="print" href="print.css">
     <!-- Viewport beillesztése -->
-    <?php include "meta.php"; ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="header">
@@ -19,7 +19,16 @@
     </div>
     <div class="contentBody">
       <!-- A menu beillesztése -->
-      <?php include "menu.php"; ?>     
+      <nav class="menu">
+        <ul>
+            <li><a href="index.html" class="active">Főoldal</a></li>
+            <li><a href="pizza.html">Pizzáink</a></li>
+            <li><a href="cart.html">Kosár</a></li>
+            <li><a href="prices.html">Áraink</a></li>
+            <li><a href="contact.html">Elérhetőség</a></li>
+            <li id="loginButton"><a href="login.html">Bejelentkezés</a></li>
+        </ul>
+      </nav>
       <div class="content">
         <h1>Üdvözlünk a Pepe Pizzéria weboldalán</h1>
           <div class="szoveg" style="min-height: 300px"><h3>A 100 éves múlt</h3>

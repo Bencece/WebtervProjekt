@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" media="print" href="print.css">
     <!-- Viewport beillesztése -->
-    <?php include "meta.php"; ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="header">
@@ -18,8 +18,17 @@
 	  </div>
 	</div>
 	<div class="contentBody">
-      	<!-- A menu beillesztése -->
-      	<?php include "menu.php"; ?>
+      <!-- A menu beillesztése -->
+      <nav class="menu">
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="pizza.html">Pizzáink</a></li>
+            <li><a href="cart.html">Kosár</a></li>
+            <li><a href="prices.html">Áraink</a></li>
+            <li><a href="contact.html">Elérhetőség</a></li>
+            <li id="loginButton"><a href="login.html" class="active">Bejelentkezés</a></li>
+        </ul>
+      </nav>
 		<div class="content" style="display:flex">
 			<div class="login" align="left">
 				<div class="forms" align="left">

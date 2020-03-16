@@ -104,6 +104,10 @@ li a:hover{
     background-color: darkgray;
     box-shadow: inset 2px 2px 2px black;
 }
+.active{
+    background-color: darkgray;
+    box-shadow: inset 2px 2px 2px black;
+}
 .pepe{
 	margin-top: 0px;
 	animation-name: animpepe;
