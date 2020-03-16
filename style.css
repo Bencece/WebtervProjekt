@@ -104,13 +104,24 @@ li a:hover{
     background-color: darkgray;
     box-shadow: inset 2px 2px 2px black;
 }
+.pepe{
+	margin-top: 0px;
+	animation-name: animpepe;
+	animation-iteration-count: 1;
+	animation-duration: 2s;
+	padding-top: 0px;
+	animation-timing-function: linear;
+}
+
 #loginButton{
     margin-top: 20px;
 }
 .menu{
     background-color: grey;
 	border-radius: 4px 0px 0px 4px;
-	width: 10%;
+	min-width: 10%;
+	max-width: 15%;
+	padding-right: 5px;
 }
 /*A tartalom beállításai*/
 .contentBody{
@@ -124,6 +135,7 @@ li a:hover{
 	color: #000;
 	background-color: rgba(255, 255, 255, 0.3);
 	width: 90%;
+	padding-left: 5px;
 }
 .content h1{
 	padding-left: 10px;
@@ -266,4 +278,13 @@ table caption{
  
 img{
 	z-index: 3;
+}
+
+@keyframes animpepe{
+	 from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
