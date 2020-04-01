@@ -334,4 +334,10 @@ img{
 	#kosar{
 		display: block;
 	}
+	.header, .footer{
+		width: 90%;
+	}
+	.contentBody{
+		width: 90%;
+	}
 }
