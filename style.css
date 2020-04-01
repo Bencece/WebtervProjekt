@@ -115,6 +115,7 @@ li a:hover{
 	animation-duration: 2s;
 	padding-top: 0px;
 	animation-timing-function: linear;
+	float: left;
 }
 
 #loginButton{
