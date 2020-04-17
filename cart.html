@@ -4,24 +4,36 @@
     <title>Kosár</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" media="print" href="print.css">
-    <?php include "meta.php"; ?>
+    <!-- Viewport beillesztése -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
   </head>
   <body>
     <div class="header">
 		<!--Logo -->
 	  <div class="pepeholder">
 		<a href="index.php">
-			<img class="pepe" src="img\pepelogo2.png" align="left" width="105px">
+			<img class="pepe" src="img\pepelogo2.png" width="105px">
 			<h1 id="title">Pepe pizzéria</h1>
 		</a>
 	  </div>
     </div>
 	<div class="contentBody">
-      	<?php include "menu.php"; ?>
+      <!-- A menu beillesztése -->
+      <nav class="menu">
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="pizza.html">Pizzáink</a></li>
+            <li><a href="cart.html" class="active">Kosár</a></li>
+            <li><a href="prices.html">Áraink</a></li>
+            <li><a href="contact.html">Elérhetőség</a></li>
+            <li id="loginButton"><a href="login.html">Bejelentkezés</a></li>
+        </ul>
+      </nav>
 		<div id="kosar" class="content">
 			<div class="sidebar">
 			<h4>Sajtadagoló</h4>
-			<hr style="1px solid grey" width="50%" align="left">
+			<hr style="border: 1px solid grey; margin-left: 0;" width="50%">
 			<a href="#">Edámi</a>+200Ft
 			<a href="#">Parmezán</a>+250Ft
 			<a href="#">Cheddar</a>+400Ft

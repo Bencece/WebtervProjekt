@@ -104,6 +104,10 @@ li a:hover{
     background-color: darkgray;
     box-shadow: inset 2px 2px 2px black;
 }
+.active{
+    background-color: darkgray;
+    box-shadow: inset 2px 2px 2px black;
+}
 .pepe{
 	margin-top: 0px;
 	animation-name: animpepe;
@@ -111,6 +115,7 @@ li a:hover{
 	animation-duration: 2s;
 	padding-top: 0px;
 	animation-timing-function: linear;
+	float: left;
 }
 
 #loginButton{
@@ -140,6 +145,9 @@ li a:hover{
 .content h1{
 	padding-left: 10px;
 }
+.loginPage{
+	display: flex;
+}
 /*A pizzákat tartalmazó kis doboz stílusa*/
 .pizzaBox{
     background-color: #4e3913;
@@ -147,7 +155,8 @@ li a:hover{
     display: inline-block;
     color: white;
     padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	text-align: center;
 }
 .pizzaBox img{
     width: 200px;
@@ -287,4 +296,48 @@ img{
     to {
         transform:rotate(360deg);
     }
+}
+/*Media query*/
+@media screen and (max-width: 576px) { 
+	.contentBody{
+		display: block;
+	}
+	.menu{
+		min-width: 100%;
+		max-width: 100%;
+	}
+	.loginPage{
+		display: block;
+	}
+	.forms{
+		margin-right: 0;
+	}
+	.login{
+		margin-left: 0;
+		width: 100%;
+	}
+	.register{
+		border-left: 0px;
+		margin-top: 10px;
+		padding-right: 0px;
+		width: 100%;
+		padding-left: 0px;
+	}
+	.content{
+		width: 100%;
+	}
+	.sidebar{
+		max-width: 100%;
+		width: 100%;
+		padding-left: 0px;
+	}
+	#kosar{
+		display: block;
+	}
+	.header, .footer{
+		width: 90%;
+	}
+	.contentBody{
+		width: 90%;
+	}
 }
