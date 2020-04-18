@@ -21,16 +21,7 @@
     </div>
     <div class="contentBody">
       <!-- A menu beillesztése -->
-      <nav class="menu">
-        <ul>
-            <li><a href="index.html">Főoldal</a></li>
-            <li><a href="pizza.html" class="active">Pizzáink</a></li>
-            <li><a href="cart.html">Kosár</a></li>
-            <li><a href="prices.html">Áraink</a></li>
-            <li><a href="contact.html">Elérhetőség</a></li>
-            <li id="loginButton"><a href="login.html">Bejelentkezés</a></li>
-        </ul>
-      </nav>
+      <?php include_once("menu.php"); ?>
       <div class="content">
           <div class="pizzaBox">
               <img src="img\margherita.jpg"/>

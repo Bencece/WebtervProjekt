@@ -21,16 +21,7 @@
     </div>
     <div class="contentBody" id="contentBody">
       <!-- A menu beillesztése -->
-      <nav class="menu" id="menu">
-        <ul>
-            <li><a href="index.html" class="active">Főoldal</a></li>
-            <li><a href="pizza.html">Pizzáink</a></li>
-            <li><a href="cart.html">Kosár</a></li>
-            <li><a href="prices.html">Áraink</a></li>
-            <li><a href="contact.html">Elérhetőség</a></li>
-            <li id="loginButton"><a href="login.html">Bejelentkezés</a></li>
-        </ul>
-      </nav>
+      <?php include_once("menu.php"); ?>
       <div class="content">
         <h1>Üdvözlünk a Pepe Pizzéria weboldalán</h1>
           <div class="szoveg" style="min-height: 300px"><h3>A 100 éves múlt</h3>

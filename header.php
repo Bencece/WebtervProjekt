@@ -1,4 +1,7 @@
 <?php 
+    /**
+     * Session elindítása vagy betöltése.
+     */
     session_start(); 
 
     /**
