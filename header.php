@@ -5,14 +5,13 @@
     session_start(); 
 
     /**
-     * logoutUser()
-     * Ha van beállítva user a munkamenetváltozókban,
+     * Logout
+     * Ha post metódussal logout értéket kap,
      * akkor kitörli a session-t és megszünteti azt.
      */
-    function logoutUser(){
-        if(isset($_SESSION["user"])){
-            session_unset();
-            session_destroy();
-        }
+    if(isset($_POST["logout"])){
+        session_unset();
+        session_destroy();
+        echo "<script>alert('Sikeres kijelentkezés!');</script>";
     }
 ?>

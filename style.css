@@ -104,6 +104,23 @@ li a:hover{
     background-color: darkgray;
     box-shadow: inset 2px 2px 2px black;
 }
+.logoutButton{
+	
+	display: block;
+    background-color: grey;
+    color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px black;
+}
+.logoutButton:hover{
+	background-color: darkgray;
+    box-shadow: inset 2px 2px 2px black;
+}
 .active{
     background-color: darkgray;
     box-shadow: inset 2px 2px 2px black;
