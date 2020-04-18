@@ -1,3 +1,4 @@
+<?php include_once("header.php"); ?>
 <!DOCTYPE html>
 <html lang="hu">
   <head>
@@ -20,16 +21,7 @@
     </div>
 	<div class="contentBody">
       <!-- A menu beillesztése -->
-      <nav class="menu">
-        <ul>
-            <li><a href="index.html">Főoldal</a></li>
-            <li><a href="pizza.html">Pizzáink</a></li>
-            <li><a href="cart.html" class="active">Kosár</a></li>
-            <li><a href="prices.html">Áraink</a></li>
-            <li><a href="contact.html">Elérhetőség</a></li>
-            <li id="loginButton"><a href="login.html">Bejelentkezés</a></li>
-        </ul>
-      </nav>
+      <?php include_once("menu.php"); ?>
 		<div id="kosar" class="content">
 			<div class="sidebar">
 			<h4>Sajtadagoló</h4>
