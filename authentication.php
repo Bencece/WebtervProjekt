@@ -1,4 +1,6 @@
 <?php
+    //registerUser("Teszt","teszt");
+    loginUser("Teszt", "teszt");
     /**
      * registerUser(username, password)
      * Két paramétert vár, egy felhasználónevet és egy jelszót.
