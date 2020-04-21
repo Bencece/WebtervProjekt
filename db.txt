@@ -1,1 +1,0 @@
-a:2:{s:8:"username";s:5:"Teszt";s:8:"password";s:60:"$2y$10$ezQnyttbMrYq5PWhb3kAA.TINYbK9sS2xOFMoub0QyI.jDjllOEbe";}
