@@ -24,22 +24,39 @@
       <?php include_once("menu.php"); ?>
       <div class="content">
           <div class="pizzaBox">
+            <form method="post" action="pizza.php">
               <img src="img\margherita.jpg"/>
               <p>Margherita pizza</p>
-              <button>Kosárba</button>
+              <input type="hidden" name="pizza" value="Margherita pizza">
+              <input type="hidden" name="prize" value="1200">
+              <button type="submit">Kosárba</button>
+            </form>
           </div>
           <div class="pizzaBox">
+            <form method="post" action="pizza.php">
               <img src="img\prosciutto.jpg"/>
               <p>Prosciutto pizza</p>
-              <button>Kosárba</button>
+              <input type="hidden" name="pizza" value="Prosciutto pizza">
+              <input type="hidden" name="prize" value="1150">
+              <button type="submit">Kosárba</button>
+            </form>
           </div>
           <div class="pizzaBox">
+            <form method="post" action="pizza.php">
               <img src="img\pepperoni.jpg"/>
               <p>Pepperoni pizza</p>
-              <button>Kosárba</button>
+              <input type="hidden" name="pizza" value="Pepperoni pizza">
+              <input type="hidden" name="prize" value="1220">
+              <button type="submit">Kosárba</button>
+            </form>
           </div>
       </div>
     </div>
     <div class="footer">Pepe Pizza<sup>®</sup> 2020</div>
+    <?php
+    if (isset($_SESSION["user"]) && isset($_POST["pizza"])){
+      array_push($_SESSION["cart"], [ "name" => $_POST["pizza"], "prize" => $_POST["prize"]]);
+    }
+    ?>
   </body>
 </html>
