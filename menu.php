@@ -5,6 +5,7 @@
         <li><a href="cart.php">Kosár</a></li>
         <li><a href="prices.php">Áraink</a></li>
         <li><a href="contact.php">Elérhetőség</a></li>
+		
         <?php
             if(isset($_SESSION["user"])){
                 echo "

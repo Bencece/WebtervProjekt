@@ -2,8 +2,8 @@
     /**
      * registerUser(username, password, password2, email, date)
      * 
-     * Öt paramétert vár, egy felhasználónevet, egy jelszót, a jelszót mégegyszer,
-     * egy e-mail címet és opcionális paraméterként egy dátumot.
+     * Öt paramétert vár, egy e-mail címet, egy felhasználónevet, egy jelszót, a jelszót mégegyszer,
+     * és opcionális paraméterként egy dátumot.
      * Ha van már felhasználó ilyen névvel, vagy nem megfelelő hosszú a jelszó,
      * vagy nem egyezik a két jelszó hibát dob, ha nincs hiba
      * hash-eli a jelszót és betszi az adatbázisba.
@@ -54,6 +54,7 @@
                 if($account["username"] == $username){
                     if(password_verify($password, $account["password"])){
                         $_SESSION["user"] = $username;
+						header("Location:login.php");
                         return "Sikeres bejelentkezés!";
                     } else return "Helytelen felhasználó/jelszó!";
                 } else return "Helytelen felhasználó/jelszó!";
