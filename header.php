@@ -3,7 +3,6 @@
      * Session elindítása vagy betöltése.
      */
     session_start(); 
-
     /**
      * Logout
      * Ha post metódussal logout értéket kap,
