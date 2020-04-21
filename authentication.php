@@ -7,7 +7,7 @@
      * hash-eli a jelszót és betszi az adatbázisba.
      */
     function registerUser($username, $password, $email, $date = null){
-        if($username != "" && $password != ""){
+        if($username != "" && $password != "" && $email != ""){
             $db = fopen("db.txt", "r");
             while (($line = fgets($db)) !== false){
                 $account = unserialize($line);
