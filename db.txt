@@ -1,0 +1,1 @@
+a:4:{s:8:"username";s:3:"asd";s:8:"password";s:60:"$2y$10$gpWGlC3ronLd/MyLb2AJIe3PM0OP3PHJTA2VAVHOLKdsJjg/3tISW";s:5:"email";s:17:"asdasd@asdasd.com";s:4:"date";s:10:"1111-11-11";}
