@@ -65,6 +65,11 @@
 			</div>
 		</div>
 	</div>
-    <div class="footer">Pepe Pizza<sup>®</sup> 2020</div>
+	<div class="footer">Pepe Pizza<sup>®</sup> 2020</div>
+	<?php 
+		//Teszt hívás
+	  	$uzenet = registerUser("Elek", "elek2", "elek2", "elek@elek");
+		echo "<script>alert('".$uzenet."');</script>";
+	  ?>
   </body>
 </html>
