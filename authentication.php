@@ -10,7 +10,7 @@
      * 
      * Visszatérési érték egy üzenet, a hibáról vagy a sikeres regisztrációról.
      */
-    function registerUser($username, $password, $password2, $email, $date = null){
+    function registerUser($email, $username, $password, $password2, $date = null){
         $errors = [];
         if($username != "" && $password != "" && $email != ""){
             $db = fopen("db.txt", "r");
