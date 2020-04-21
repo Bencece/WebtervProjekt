@@ -55,8 +55,8 @@
                     if(password_verify($password, $account["password"])){
                         $_SESSION["user"] = $username;
                         return "Sikeres bejelentkezés!";
-                    } else return "Helytelen felhasználó/jelszó!";
-                } else return "Helytelen felhasználó/jelszó!";
+                    } else return "Helytelen felhasználónév vagy jelszó!";
+                }
             }
             return "Hiba a bejelentkezés során! (1)";
         }
