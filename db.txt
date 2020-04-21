@@ -1,3 +1,1 @@
-a:4:{s:8:"username";s:3:"asd";s:8:"password";s:60:"$2y$10$gpWGlC3ronLd/MyLb2AJIe3PM0OP3PHJTA2VAVHOLKdsJjg/3tISW";s:5:"email";s:17:"asdasd@asdasd.com";s:4:"date";s:10:"1111-11-11";}
-a:4:{s:8:"username";s:11:"sanyi961112";s:8:"password";s:60:"$2y$10$MgFBtDp.yDFZpoBqVflwZuJzp2f3xmduNPNu9GwGeryLNeKLteZhC";s:5:"email";s:23:"sanyi961112@hotmail.com";s:4:"date";s:10:"1996-11-12";}
-a:4:{s:8:"username";s:4:"asd2";s:8:"password";s:60:"$2y$10$/nRXxSjVU4OG3pGEwoqC6enBSdekWj0hI.NoPlLDeNaueg3gKsqBS";s:5:"email";s:19:"asd2asd2@asdasd.com";s:4:"date";s:10:"1111-11-11";}
+a:4:{s:8:"username";s:3:"asd";s:8:"password";s:60:"$2y$10$gpWGlC3ronLd/MyLb2AJIe3PM0OP3PHJTA2VAVHOLKdsJjg/3tISW";s:5:"email";s:17:"asdasd@asdasd.com";s:4:"date";s:10:"1111-11-11";}a:4:{s:8:"username";s:5:"sanyi";s:8:"password";s:60:"$2y$10$1E33clUi9NScwnjVOm81A.eHF0UwrH7W7CqKY7HdVQulKesXdFary";s:5:"email";s:9:"sa@sa.com";s:4:"date";s:10:"1960-11-11";}
