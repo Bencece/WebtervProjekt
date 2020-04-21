@@ -43,25 +43,7 @@
 							<input name="login" class="submits" type="submit" value="Bejelentkezés"/>
 						</p>
 					</form>
-					<?php 
-						$email = "";
-						$username = "";
-						$password = ""; 
-						$password2 = "";
-						$birthday = "";
-						
-						if (isset($_POST['signup'])){
-							$email = $_POST['email'];
-							$username = $_POST['reguser'];
-							$password = $_POST['regpassword']; 
-							$password2 = $_POST['regpassword2'];
-							$birthday = $_POST['birthday'];
-							registerUser($email, $username, $password, $password2, $birthday);
-						}
-						//Teszt hívás
-						//$uzenet = registerUser("Elek", "elek2", "elek2", "elek@elek");
-						//echo "<script>alert('".$uzenet."');</script>";
-					?>
+					
 				</div>
 			</div>
 			<div class="register">
@@ -86,6 +68,23 @@
 		</div>
 	</div>
 	<div class="footer">Pepe Pizza<sup>®</sup> 2020</div>
-	
+	<?php 
+		$email = "";
+		$username = "";
+		$password = ""; 
+		$password2 = "";
+		$birthday = "";
+						
+		if (isset($_POST['signup'])){
+			$email = $_POST['email'];
+			$username = $_POST['reguser'];
+			$password = $_POST['regpassword']; 
+			$password2 = $_POST['regpassword2'];
+			$birthday = $_POST['birthday'];
+			registerUser($email, $username, $password, $password2, $birthday);
+		}
+		$uzenet = registerUser($email, $username, $password, $password2, $birthday);
+		echo "<script>alert('".$uzenet."');</script>";
+		?>
   </body>
 </html>

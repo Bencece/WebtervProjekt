@@ -16,8 +16,8 @@
             $db = fopen("db.txt", "r");
             while (($line = fgets($db)) !== false){
                 $account = unserialize($line);
-                if($account["username"] == $username){
-                    return "Kérlek válassz másik felhasználónevet!";
+                if($account["username"] === $username){
+                    return "A felhasználónév már foglalt!";
                 }
             }
             if (strlen($password) < 5 ){
