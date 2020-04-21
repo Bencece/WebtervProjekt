@@ -1,13 +1,12 @@
 <?php
-    //registerUser("Teszt","teszt");
-    loginUser("Teszt", "teszt");
     /**
-     * registerUser(username, password)
-     * Két paramétert vár, egy felhasználónevet és egy jelszót.
+     * registerUser(username, password, email, date)
+     * Négy paramétert vár, egy felhasználónevet, egy jelszót,
+     * egy e-mail címet és opcionális paraméterként egy dátumot.
      * Ha van már felhasználó ilyen névvel hibát dob, ha nincs 
      * hash-eli a jelszót és betszi az adatbázisba.
      */
-    function registerUser($username, $password){
+    function registerUser($username, $password, $email, $date = null){
         if($username != "" && $password != ""){
             $db = fopen("db.txt", "r");
             while (($line = fgets($db)) !== false){
@@ -19,7 +18,7 @@
             fclose($db);
             $db = fopen("db.txt", "a");
             $hashed = password_hash($password, PASSWORD_DEFAULT);
-            fwrite($db, serialize(["username" => "$username", "password" => "$hashed"]) . "\n");
+            fwrite($db, serialize(["username" => "$username", "password" => "$hashed", "email" => "$email", "date" => "$date"]) . "\n");
             fclose($db);
             return "Sikeres regisztráció!";
         }
