@@ -11,7 +11,6 @@
      * Visszatérési érték egy üzenet, a hibáról vagy a sikeres regisztrációról.
      */
     function registerUser($email, $username, $password, $password2, $date = null){
-        $errors = [];
         if($username != "" && $password != "" && $email != ""){
             $db = fopen("db.txt", "r");
             while (($line = fgets($db)) !== false){
@@ -56,8 +55,8 @@
                     if(password_verify($password, $account["password"])){
                         $_SESSION["user"] = $username;
                         return "Sikeres bejelentkezés!";
-                    } else return "A jelszó nem megfelelő!";
-                } else return "A felhasználónév nem megfelelő!";
+                    } else return "Helytelen felhasználó/jelszó!";
+                } else return "Helytelen felhasználó/jelszó!";
             }
             return "Hiba a bejelentkezés során! (1)";
         }

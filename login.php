@@ -81,10 +81,19 @@
 			$password = $_POST['regpassword']; 
 			$password2 = $_POST['regpassword2'];
 			$birthday = $_POST['birthday'];
-			registerUser($email, $username, $password, $password2, $birthday);
+			$uzenet = registerUser($email, $username, $password, $password2, $birthday);
+			echo "<script>alert('".$uzenet."');</script>";
 		}
-		$uzenet = registerUser($email, $username, $password, $password2, $birthday);
-		echo "<script>alert('".$uzenet."');</script>";
-		?>
+	?>
+	<?php
+		$username = "";
+		$password = "";
+		if (isset($_POST['login'])){
+			$username = ($_POST['username']);
+			$password = ($_POST['password']);
+			$uzenet = loginUser($username, $password);
+			echo "<script>alert('".$uzenet."');</script>";
+		}
+	?>
   </body>
 </html>
