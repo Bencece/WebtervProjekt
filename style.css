@@ -21,9 +21,17 @@ body {
 /*oldalsáv beállításai*/
 #kosar{
 	display:flex;
-	flex-direction: row;	
-	min-height: 300px;
+	flex-direction: row;
+	width: 100%;
 }
+#contentCart{
+	width: 100%;
+}
+.cart{
+	width: 100%;
+	height: 100%;
+}
+
 
 .sidebar{
 	background-color: rgba(230, 230, 230, 0.65);
@@ -39,31 +47,7 @@ body {
 	padding-left: 10px;
 }
 
-.sidebar a:link{
-	text-decoration: none!important;
-	color: brown;	
-}
 
-.sidebar a:visited{
-	text-decoration: none!important;
-	color: brown;	
-}
-
-.sidebar a:active{
-	text-decoration: none!important;
-	color: brown;	
-}
-
-.sidebar a:hover{
-	text-decoration: none!important;
-	color: brown;
-	font-weight: bold;
-}
-
-.contentCart{
-	max-width: 80%;
-	padding-left: 15px;
-}
 
 /*A cím beállításai*/
 #title{
@@ -72,7 +56,7 @@ body {
 	font-size: 35px;
 	color: #EEEEEE;
 	animation-name: anim2;
-	animation-duration: 3s;
+	animation-duration: 3.5s;
 	animation-iteration-count: infinite;
 }
 
@@ -195,7 +179,7 @@ li a:hover{
 	width: 20px !important;
 }
 /*Táblázatok formázása*/
-#table{
+table{
     width: 80%;
     text-align: center;
     border: 1px solid;
@@ -216,9 +200,7 @@ tfoot tr td{
     padding: 8px;
     font-size: 15px;
 }
-#cartTable{
-	width: 100%;
-}
+
 .pizzaInfo{
 	width: 200px;
 	float: left;
@@ -316,11 +298,11 @@ table caption{
 }
 @keyframes anim2{
 	0% 	{color: red;}
-	15% {color: orange;}
-	25%	{color: yellow;}
-	35%	{color: green;}
-	50%	{color: blue;}
-	75%	{color: indigo;}
+	14% {color: orange;}
+	42%	{color: yellow;}
+	57%	{color: green;}
+	71%	{color: blue;}
+	85%	{color: indigo;}
 	100%{color: violet;}
 }
  

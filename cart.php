@@ -60,16 +60,16 @@
 			<div class="sidebar">
 			<h4>Sajtadagoló</h4>
 			<hr style="border: 1px solid grey; margin-left: 0;" width="50%">
-			<a href="#">Edámi</a>+200Ft
-			<a href="#">Parmezán</a>+250Ft
-			<a href="#">Cheddar</a>+400Ft
-			<a href="#">Vörös Cheddar</a>+500Ft
+			Edámi +200Ft<br>
+			Parmezán +250Ft<br>
+			Cheddar +400Ft<br>
+			Vörös Cheddar +500Ft<br>
 			</div>
-			<div class="contentCart">
+			<div id="contentCart">
 				<?php
 					if (count($_SESSION["cart"]) > 0){
 						echo "
-						<table id='cartTable'>
+						<table class='cart'>
 							<thead>
 								<tr>
 									<td colspan=3>A Kosaradban lévő pizzák:</td>
@@ -78,7 +78,7 @@
 							<tbody>";
 						foreach ($_SESSION["cart"] as $pizza){
 							echo "<tr>";
-							echo "<td>".$pizza["name"]."<br>";
+							echo "<td align='left'>".$pizza["name"]."<br>";
 							if($pizza["toppings"] != []){
 								echo "<ul>";
 								foreach ($pizza["toppings"] as $topping){
@@ -90,7 +90,7 @@
 							echo "	
 								<form method='post' action='cart.php'>
 									<select name='topping' required>
-									<option selected disabled value=''>Plussz feltét...</option>";
+									<option selected disabled value=''>Plusz feltét...</option>";
 									foreach ($toppings as $topping){
 										echo "<option value='".$topping["name"]."'>".$topping["name"]." +".$topping["prize"]." Ft</option>";
 									}

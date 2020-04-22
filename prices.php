@@ -42,17 +42,17 @@
               <tr>
                 <td>Margherita pizza</td>
                 <td>28cm</td>
-                <td>1200</td>
+                <td>1200 Ft</td>
               </tr>
               <tr>
                 <td>Prosciutto pizza</td>
                 <td>28cm</td>
-                <td>1150</td>
+                <td>1150 Ft</td>
               </tr>
               <tr>
                 <td>Pepperoni pizza</td>
                 <td>30cm</td>
-                <td>1220</td>
+                <td>1220 Ft</td>
               </tr>
             </tbody>
             <tfoot>
@@ -61,7 +61,7 @@
               </tr>
             </tfoot>
           </table>
-		  További árak hamarosan...
+		 
       </div>
     </div>
     <div class="footer">Pepe Pizza<sup>®</sup> 2020</div>
