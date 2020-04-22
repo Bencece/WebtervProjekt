@@ -42,6 +42,7 @@
 			<div class="contentCart">
 				<?php
 					$index = 0;
+					$summa = 0;
 					if(isset($_POST["delete"])){
 						foreach ($_SESSION["cart"] as $pizza){
 							if($_POST["delete"] == $pizza["name"]){
@@ -71,13 +72,15 @@
 								</form>
 							</td>";
 							echo "</tr>";
+							$summa += $pizza["prize"];
 							$index++;
 						}
 						echo "
 							</tbody>
 							<tfoot>
 								<tr>
-									<td colspan=3>Tekintsd át a rendelésed.</td>
+									<td colspan=2>Fizetendő:</td>
+									<td>".$summa." Ft</td>
 								</tr>
 							</tfoot>
 						</table>
