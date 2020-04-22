@@ -24,7 +24,33 @@
 		</a>
 	  </div>
 	  <?php
-	  	include_once("loginchecked.php");
+		  include_once("loginchecked.php");
+		  
+		  $index = 0;
+		  $summa = 0;
+		  $toppings = [
+			  ["name" => "Edámi sajt", "prize" => "200"],
+			  ["name" => "Parmezán sajt", "prize" => "250"],
+			  ["name" => "Cheddar sajt", "prize" => "400"],
+			  ["name" => "Vörös Cheddar sajt", "prize" => "500"]
+		  ];
+		  if(isset($_POST["delete"])){
+			  foreach ($_SESSION["cart"] as $pizza){
+				  if($_POST["delete"] == $pizza["name"]){
+					  $key = array_search($pizza, $_SESSION["cart"]);
+					  unset($_SESSION["cart"][$key]);
+				  }
+			  }
+		  }
+		  if(isset($_POST["putItOn"])){
+			  foreach ($_SESSION["cart"] as $pizza){
+				  if($_POST["putItOn"] == $pizza["name"]){
+					  $key = array_search($pizza, $_SESSION["cart"]);
+					  $toppingPrize = array_search($_POST["topping"], array_column($toppings, 'name'));
+					  array_push($_SESSION["cart"][$key]["toppings"], [ "topping" => $_POST["topping"] , "toppingPrize" => $toppings[$toppingPrize]["prize"] ]);
+				  }
+			  }
+		  }
 		?>
     </div>
 	<div class="contentBody">
@@ -41,31 +67,6 @@
 			</div>
 			<div class="contentCart">
 				<?php
-					$index = 0;
-					$summa = 0;
-					$toppings = [
-						["name" => "Edámi sajt", "prize" => "200"],
-						["name" => "Parmezán sajt", "prize" => "250"],
-						["name" => "Cheddar sajt", "prize" => "400"],
-						["name" => "Vörös Cheddar sajt", "prize" => "500"]
-					];
-					if(isset($_POST["delete"])){
-						foreach ($_SESSION["cart"] as $pizza){
-							if($_POST["delete"] == $pizza["name"]){
-								$key = array_search($pizza, $_SESSION["cart"]);
-								unset($_SESSION["cart"][$key]);
-							}
-						}
-					}
-					if(isset($_POST["putItOn"])){
-						foreach ($_SESSION["cart"] as $pizza){
-							if($_POST["putItOn"] == $pizza["name"]){
-								$key = array_search($pizza, $_SESSION["cart"]);
-								$toppingPrize = array_search($_POST["topping"], array_column($toppings, 'name'));
-								array_push($_SESSION["cart"][$key]["toppings"], [ "topping" => $_POST["topping"] , "toppingPrize" => $toppings[$toppingPrize]["prize"] ]);
-							}
-						}
-					}
 					if (count($_SESSION["cart"]) > 0){
 						echo "
 						<table id='cartTable'>

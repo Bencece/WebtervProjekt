@@ -20,7 +20,10 @@
 	  </div>
 	  <?php
 	  	include_once("loginchecked.php");
-		?>
+      if (isset($_SESSION["user"]) && isset($_POST["pizza"])){
+        array_push($_SESSION["cart"], [ "name" => $_POST["pizza"], "prize" => $_POST["prize"], "toppings" => [] ]);
+      }
+    ?>
     </div>
     <div class="contentBody">
       <!-- A menu beillesztése -->
@@ -32,7 +35,7 @@
               <p>Margherita pizza</p>
               <input type="hidden" name="pizza" value="Margherita pizza">
               <input type="hidden" name="prize" value="1200">
-              <button type="submit">Kosárba</button>
+              <button type="submit" <?php if (!isset($_SESSION["user"])){ echo "disabled"; }?> >Kosárba</button>
             </form>
           </div>
           <div class="pizzaBox">
@@ -41,7 +44,7 @@
               <p>Prosciutto pizza</p>
               <input type="hidden" name="pizza" value="Prosciutto pizza">
               <input type="hidden" name="prize" value="1150">
-              <button type="submit">Kosárba</button>
+              <button type="submit" <?php if (!isset($_SESSION["user"])){ echo "disabled"; }?> >Kosárba</button>
             </form>
           </div>
           <div class="pizzaBox">
@@ -50,16 +53,11 @@
               <p>Pepperoni pizza</p>
               <input type="hidden" name="pizza" value="Pepperoni pizza">
               <input type="hidden" name="prize" value="1220">
-              <button type="submit">Kosárba</button>
+              <button type="submit" <?php if (!isset($_SESSION["user"])){ echo "disabled"; }?> >Kosárba</button>
             </form>
           </div>
       </div>
     </div>
     <div class="footer">Pepe Pizza<sup>®</sup> 2020</div>
-    <?php
-    if (isset($_SESSION["user"]) && isset($_POST["pizza"])){
-      array_push($_SESSION["cart"], [ "name" => $_POST["pizza"], "prize" => $_POST["prize"], "toppings" => [] ]);
-    }
-    ?>
   </body>
 </html>

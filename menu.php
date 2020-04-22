@@ -8,7 +8,7 @@
             if(isset($_SESSION["user"])){
                 echo "<li><a href='cart.php'";
                 echo setActive("cart.php"); 
-                echo ">Kosár</a></li>";
+                echo ">Kosár <span id='cartSpan'>".count($_SESSION["cart"])."</span></a></li>";
                 echo "
                 <form method='post' action='index.php'>
                     <input type='hidden' name='logout'>
