@@ -145,6 +145,12 @@ li a:hover{
 	max-width: 15%;
 	padding-right: 5px;
 }
+#cartSpan{
+	background-color: #3a3a3a;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5px 5px 5px 5px;
+}
 /*A tartalom beállításai*/
 .contentBody{
 	margin: auto;

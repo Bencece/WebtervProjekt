@@ -55,6 +55,7 @@
                     if(password_verify($password, $account["password"])){
                         $_SESSION["user"] = $username;
                         $_SESSION["cart"] = [];
+                        $_SESSION["pizzaID"] = 0;
                         return "Sikeres bejelentkezés!";
                     } else return "Helytelen felhasználónév vagy jelszó!";
                 }
