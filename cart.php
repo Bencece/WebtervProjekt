@@ -43,6 +43,12 @@
 				<?php
 					$index = 0;
 					$summa = 0;
+					$toppings = [
+						["name" => "Edámi sajt", "prize" => "200"],
+						["name" => "Parmezán sajt", "prize" => "250"],
+						["name" => "Cheddar sajt", "prize" => "400"],
+						["name" => "Vörös Cheddar sajt", "prize" => "500"]
+					];
 					if(isset($_POST["delete"])){
 						foreach ($_SESSION["cart"] as $pizza){
 							if($_POST["delete"] == $pizza["name"]){
@@ -50,6 +56,16 @@
 								unset($_SESSION["cart"][$key]);
 							}
 						}
+					}
+					if(isset($_POST["putItOn"])){
+						foreach ($_SESSION["cart"] as $pizza){
+							if($_POST["putItOn"] == $pizza["name"]){
+								$key = array_search($pizza, $_SESSION["cart"]);
+								$toppingPrize = array_search($_POST["topping"], array_column($toppings, 'name'));
+								array_push($_SESSION["cart"][$key], [ "topping" => $_POST["topping"] , "toppingPrize" => $toppings[$toppingPrize]["prize"] ]);
+							}
+						}
+						//var_dump($_SESSION["cart"]);
 					}
 					if (count($_SESSION["cart"]) > 0){
 						echo "
@@ -62,7 +78,20 @@
 							<tbody>";
 						foreach ($_SESSION["cart"] as $pizza){
 							echo "<tr>";
-							echo "<td>".$pizza["name"]."</td>";
+							echo "<td>".$pizza["name"]."<br>";
+							echo "	
+								<form method='post' action='cart.php'>
+									<select name='topping'>
+									<option selected disabled>Plussz feltét...</option>";
+									foreach ($toppings as $topping){
+										echo "<option value='".$topping["name"]."'>".$topping["name"]." +".$topping["prize"]." Ft</option>";
+									}
+							echo "
+									</select>
+									<input type='hidden' name='putItOn' value='".$pizza["name"]."'>
+									<button type='submit'>+</button>
+								</form>
+								</td>";
 							echo "<td>".$pizza["prize"]." Ft</td>";
 							echo "
 							<td>
