@@ -62,10 +62,9 @@
 							if($_POST["putItOn"] == $pizza["name"]){
 								$key = array_search($pizza, $_SESSION["cart"]);
 								$toppingPrize = array_search($_POST["topping"], array_column($toppings, 'name'));
-								array_push($_SESSION["cart"][$key], [ "topping" => $_POST["topping"] , "toppingPrize" => $toppings[$toppingPrize]["prize"] ]);
+								array_push($_SESSION["cart"][$key]["toppings"], [ "topping" => $_POST["topping"] , "toppingPrize" => $toppings[$toppingPrize]["prize"] ]);
 							}
 						}
-						//var_dump($_SESSION["cart"]);
 					}
 					if (count($_SESSION["cart"]) > 0){
 						echo "
@@ -79,10 +78,17 @@
 						foreach ($_SESSION["cart"] as $pizza){
 							echo "<tr>";
 							echo "<td>".$pizza["name"]."<br>";
+							if($pizza["toppings"] != []){
+								echo "<ul>";
+								foreach ($pizza["toppings"] as $topping){
+									echo "<li>".$topping["topping"]." +".$topping["toppingPrize"]." Ft</li>";
+								}
+								echo "</ul>";
+							}
 							echo "	
 								<form method='post' action='cart.php'>
-									<select name='topping'>
-									<option selected disabled>Plussz feltét...</option>";
+									<select name='topping' required>
+									<option selected disabled value=''>Plussz feltét...</option>";
 									foreach ($toppings as $topping){
 										echo "<option value='".$topping["name"]."'>".$topping["name"]." +".$topping["prize"]." Ft</option>";
 									}
