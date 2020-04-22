@@ -58,7 +58,7 @@
     <div class="footer">Pepe Pizza<sup>®</sup> 2020</div>
     <?php
     if (isset($_SESSION["user"]) && isset($_POST["pizza"])){
-      array_push($_SESSION["cart"], [ "name" => $_POST["pizza"], "prize" => $_POST["prize"]]);
+      array_push($_SESSION["cart"], [ "name" => $_POST["pizza"], "prize" => $_POST["prize"], "toppings" => [] ]);
     }
     ?>
   </body>
