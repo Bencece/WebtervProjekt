@@ -14,7 +14,7 @@
 			<!--Logo -->
 	  <div class="pepeholder">
 		<a href="index.php">
-			<img class="pepe" src="img\pepelogo2.png" width="105px">
+			<img class="pepe" title="Pepe Pizzéria" src="img\pepelogo2.png" width="105px">
 			<h1 id="title">Pepe pizzéria</h1>
 		</a>
 	  </div>

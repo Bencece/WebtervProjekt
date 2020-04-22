@@ -129,7 +129,7 @@ li a:hover{
 	margin-top: 0px;
 	animation-name: animpepe;
 	animation-iteration-count: 1;
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 	padding-top: 0px;
 	animation-timing-function: linear;
 	float: left;
@@ -311,10 +311,10 @@ img{
 
 @keyframes animpepe{
 	 from {
-        transform:rotate(0deg);
+        transform:rotate(360deg);
     }
     to {
-        transform:rotate(360deg);
+        transform:rotate(0deg);
     }
 }
 /*Media query*/
@@ -360,4 +360,15 @@ img{
 	.contentBody{
 		width: 90%;
 	}
+}
+
+.user{
+	padding-top: 5px;
+	height: 20px;
+	min-width: 50%;
+	padding-left: 10px;
+	background-color: rgba(70, 128, 222, 0.8);
+	color: white;
+	border-radius: 5px 5px 5px 5px;
+	margin-bottom: 3px;
 }
