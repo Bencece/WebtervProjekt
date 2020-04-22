@@ -19,9 +19,10 @@
 		</a>
 	  </div>
 	  <?php
-	  	include_once("loginchecked.php");
+      include_once("loginchecked.php");
       if (isset($_SESSION["user"]) && isset($_POST["pizza"])){
-        array_push($_SESSION["cart"], [ "name" => $_POST["pizza"], "prize" => $_POST["prize"], "toppings" => [] ]);
+        array_push($_SESSION["cart"], [ "id" => $_SESSION["pizzaID"], "name" => $_POST["pizza"], "prize" => $_POST["prize"], "toppings" => [] ]);
+        $_SESSION["pizzaID"]++;
       }
     ?>
     </div>

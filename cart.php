@@ -36,7 +36,7 @@
 		  ];
 		  if(isset($_POST["delete"])){
 			  foreach ($_SESSION["cart"] as $pizza){
-				  if($_POST["delete"] == $pizza["name"]){
+				  if($_POST["delete"] == $pizza["id"]){
 					  $key = array_search($pizza, $_SESSION["cart"]);
 					  unset($_SESSION["cart"][$key]);
 				  }
@@ -44,7 +44,7 @@
 		  }
 		  if(isset($_POST["putItOn"])){
 			  foreach ($_SESSION["cart"] as $pizza){
-				  if($_POST["putItOn"] == $pizza["name"]){
+				  if($_POST["putItOn"] == $pizza["id"]){
 					  $key = array_search($pizza, $_SESSION["cart"]);
 					  $toppingPrize = array_search($_POST["topping"], array_column($toppings, 'name'));
 					  array_push($_SESSION["cart"][$key]["toppings"], [ "topping" => $_POST["topping"] , "toppingPrize" => $toppings[$toppingPrize]["prize"] ]);
@@ -96,7 +96,7 @@
 									}
 							echo "
 									</select>
-									<input type='hidden' name='putItOn' value='".$pizza["name"]."'>
+									<input type='hidden' name='putItOn' value='".$pizza["id"]."'>
 									<button type='submit'>+</button>
 								</form>
 								</td>";
@@ -104,7 +104,7 @@
 							echo "
 							<td>
 								<form method='post' action='cart.php'>
-									<input type='hidden' name='delete' value='".$pizza["name"]."'>
+									<input type='hidden' name='delete' value='".$pizza["id"]."'>
 									<button type='submit'>X</button>
 								</form>
 							</td>";
