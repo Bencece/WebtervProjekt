@@ -33,7 +33,7 @@
           <div class="pizzaBox">
             <form method="post" action="pizza.php">
               <img src="img\margherita.jpg"/>
-              <p>Margherita pizza</p>
+              <p><a href="info.php?pizza=0">Margherita pizza <img class="infoIcon" src="img/info.png"></a></p>
               <input type="hidden" name="pizza" value="Margherita pizza">
               <input type="hidden" name="prize" value="1200">
               <button type="submit" <?php if (!isset($_SESSION["user"])){ echo "disabled"; }?> >Kosárba</button>
@@ -42,7 +42,7 @@
           <div class="pizzaBox">
             <form method="post" action="pizza.php">
               <img src="img\prosciutto.jpg"/>
-              <p>Prosciutto pizza</p>
+              <p><a href="info.php?pizza=1">Prosciutto pizza <img class="infoIcon" src="img/info.png"></a></p>
               <input type="hidden" name="pizza" value="Prosciutto pizza">
               <input type="hidden" name="prize" value="1150">
               <button type="submit" <?php if (!isset($_SESSION["user"])){ echo "disabled"; }?> >Kosárba</button>
@@ -51,7 +51,7 @@
           <div class="pizzaBox">
             <form method="post" action="pizza.php">
               <img src="img\pepperoni.jpg"/>
-              <p>Pepperoni pizza</p>
+              <p><a href="info.php?pizza=2">Pepperoni pizza <img class="infoIcon" src="img/info.png"></a></p>
               <input type="hidden" name="pizza" value="Pepperoni pizza">
               <input type="hidden" name="prize" value="1220">
               <button type="submit" <?php if (!isset($_SESSION["user"])){ echo "disabled"; }?> >Kosárba</button>
