@@ -82,6 +82,7 @@
 								echo "<ul>";
 								foreach ($pizza["toppings"] as $topping){
 									echo "<li>".$topping["topping"]." +".$topping["toppingPrize"]." Ft</li>";
+									$summa += $topping["toppingPrize"];
 								}
 								echo "</ul>";
 							}
