@@ -22,9 +22,10 @@
 	  </div>
 	  <?php
 		  include_once("loginchecked.php");
-		  
 		  $index = 0;
 		  $summa = 0;
+		  $today = date("m-d");
+		  $birthday = date("m-d",strtotime($_SESSION["birthday"]));
 		  $toppings = [
 			  ["name" => "Edámi sajt", "prize" => "200"],
 			  ["name" => "Parmezán sajt", "prize" => "250"],
@@ -109,11 +110,20 @@
 							$summa += $pizza["prize"];
 							$index++;
 						}
+						//Ha szülinapja van
+						if($today == $birthday){
+							$summa*=0.9;
+						}
 						echo "
 							</tbody>
 							<tfoot>
 								<tr>
-									<td colspan=2>Fizetendő:</td>
+									<td colspan=2>Fizetendő:";
+									//Ha szülinapja van
+									if($today == $birthday){
+										echo "<br>Sok boldog születésnapot! Ma 10% kedvezményt kapsz ajándékba.";
+									}
+									echo "</td>
 									<td>".$summa." Ft</td>
 								</tr>
 							</tfoot>

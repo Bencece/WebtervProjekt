@@ -56,6 +56,7 @@
                         $_SESSION["user"] = $username;
                         $_SESSION["cart"] = [];
                         $_SESSION["pizzaID"] = 0;
+                        $_SESSION["birthday"] = $account["date"];
                         return "Sikeres bejelentkezés!";
                     } else return "Helytelen felhasználónév vagy jelszó!";
                 }
