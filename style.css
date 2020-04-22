@@ -212,6 +212,12 @@ tfoot tr td{
 #cartTable{
 	width: 100%;
 }
+.pizzaInfo{
+	width: 200px;
+	float: left;
+	border-radius: 5px 5px 5px 5px;
+	margin-right: 10px;
+}
 /*Táblázat címe*/
 table caption{
     font-weight: bold;
