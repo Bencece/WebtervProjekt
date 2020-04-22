@@ -1,4 +1,9 @@
-<?php include_once("header.php"); ?>
+<?php include_once("header.php"); 
+	if(!isset($_SESSION["user"])){
+		header('Location: login.php');
+		exit;
+	}
+?>
 <!DOCTYPE html>
 <html lang="hu">
   <head>
@@ -35,7 +40,52 @@
 			<a href="#">Vörös Cheddar</a>+500Ft
 			</div>
 			<div class="contentCart">
-				<p>Kosarad jelenleg üres!</p>
+				<?php
+					$index = 0;
+					if(isset($_POST["delete"])){
+						foreach ($_SESSION["cart"] as $pizza){
+							if($_POST["delete"] == $pizza["name"]){
+								$key = array_search($pizza, $_SESSION["cart"]);
+								unset($_SESSION["cart"][$key]);
+							}
+						}
+					}
+					if (count($_SESSION["cart"]) > 0){
+						echo "
+						<table id='cartTable'>
+							<thead>
+								<tr>
+									<td colspan=3>A Kosaradban lévő pizzák:</td>
+								</tr>
+							</thead>
+							<tbody>";
+						foreach ($_SESSION["cart"] as $pizza){
+							echo "<tr>";
+							echo "<td>".$pizza["name"]."</td>";
+							echo "<td>".$pizza["prize"]." Ft</td>";
+							echo "
+							<td>
+								<form method='post' action='cart.php'>
+									<input type='hidden' name='delete' value='".$pizza["name"]."'>
+									<button type='submit'>X</button>
+								</form>
+							</td>";
+							echo "</tr>";
+							$index++;
+						}
+						echo "
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan=3>Tekintsd át a rendelésed.</td>
+								</tr>
+							</tfoot>
+						</table>
+						";
+					} else {
+						echo "<p>Kosarad jelenleg üres!</p>";
+					}
+				?>
 			</div>
 		</div>
 	</div>

@@ -54,7 +54,7 @@
                 if($account["username"] == $username){
                     if(password_verify($password, $account["password"])){
                         $_SESSION["user"] = $username;
-						header("Location:login.php");
+                        $_SESSION["cart"] = [];
                         return "Sikeres bejelentkezés!";
                     } else return "Helytelen felhasználónév vagy jelszó!";
                 }

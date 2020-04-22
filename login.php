@@ -89,6 +89,7 @@
 			$birthday = $_POST['birthday'];
 			$uzenet = registerUser($email, $username, $password, $password2, $birthday);
 			echo "<script>alert('".$uzenet."');</script>";
+			header('Location: index.php');
 		}
 	?>
 	<?php
@@ -99,6 +100,7 @@
 			$password = ($_POST['password']);
 			$uzenet = loginUser($username, $password);
 			echo "<script>alert('".$uzenet."');</script>";
+			header('Location: index.php');
 		}
 	?>
   </body>
