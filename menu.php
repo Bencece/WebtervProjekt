@@ -10,10 +10,10 @@
                 echo setActive("cart.php"); 
                 echo ">Kosár <span id='cartSpan'>".count($_SESSION["cart"])."</span></a></li>";
                 echo "
-                <form method='post' action='index.php'>
+                <li><form method='post' action='index.php'>
                     <input type='hidden' name='logout'>
-                    <li><button type='submit' class='logoutButton'>Kijelentkezés</button></li>
-                </form>
+                    <button type='submit' class='logoutButton'>Kijelentkezés</button>
+                </form></li>
                 ";
             } else {
                 echo "<li id='loginButton'><a href='login.php' ";

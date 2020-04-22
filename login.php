@@ -2,10 +2,6 @@
 	include_once("header.php"); 
 	include_once("authentication.php");
 ?>
-
-<!DOCTYPE html>
-<html lang="hu">
-  <head>
     <title>Bejelentkezés</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" media="print" href="print.css">
@@ -18,7 +14,7 @@
 		<!--Logo -->
 	  <div class="pepeholder">
 		<a href="index.php">
-			<img class="pepe" title="Pepe Pizzéria" src="img\pepelogo2.png" width="105px">
+			<img class="pepe" title="Pepe Pizzéria" src="img/pepelogo2.png" width="105">
 			<h1 id="title">Pepe pizzéria</h1>
 		</a>
 	  </div>
@@ -56,18 +52,13 @@
 				<div class="forms">
 					<form method="POST" action="login.php" enctype="multipart/form-data">
 					<h2>Regisztráció új felhasználóknak</h2>
-					<p>
-						<label>E-mail cím: <input name="email" class="regemail" type="email" placeholder="e-mail" required maxlength="25"/></label>
-					</p>
-					<p>
-				<label>Felhasználónév:<input name="reguser" class="reguser" type="text" placeholder="username" required maxlength="25"/></label></p>
-				<p>
-				<label>Jelszó: <input name="regpassword" class="regpw" type="password" placeholder="password" required maxlength="25"/></label></p>
-				<label>Jelszó újra: <input name="regpassword2" class="regpw" type="password" placeholder="password" required maxlength="25"/></label></p>
-				<p>
-					<label>Születésnap: <input type="date" id="birthday" name="birthday"></label>
-				</p><br/>
-				<input name="signup" class="submits"  type="submit" value="Regisztrálok"/>
+					<p><label>E-mail cím: <input name="email" class="regemail" type="email" placeholder="e-mail" required maxlength="25"/></label><p>
+					<p><label>Felhasználónév:<input name="reguser" class="reguser" type="text" placeholder="username" required maxlength="25"/></label><p>
+					<p><label>Jelszó: <input name="regpassword" class="regpw" type="password" placeholder="password" required maxlength="25"/></label><p>
+					<p><label>Jelszó újra: <input name="regpassword2" class="regpw" type="password" placeholder="password" required maxlength="25"/></label><p>
+					<p><label>Születésnap: <input type="date" id="birthday" name="birthday"></label>
+					<br/>
+					<input name="signup" class="submits"  type="submit" value="Regisztrálok"/>
 				</form>
 			</div>
 			</div>

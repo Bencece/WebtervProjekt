@@ -1,7 +1,4 @@
 <?php include_once("header.php"); ?>
-<!DOCTYPE html>
-<html lang="hu">
-  <head>
     <title>Pizzáink</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" media="print" href="print.css">
@@ -14,7 +11,7 @@
 			<!--Logo -->
 	 <div class="pepeholder">
 		<a href="index.php">
-			<img class="pepe" title="Pepe Pizzéria" src="img\pepelogo2.png" width="105px">
+			<img class="pepe" title="Pepe Pizzéria" src="img/pepelogo2.png" width="105">
 			<h1 id="title">Pepe pizzéria</h1>
 		</a>
 	  </div>
@@ -32,7 +29,7 @@
       <div class="content">
           <div class="pizzaBox">
             <form method="post" action="pizza.php">
-              <img src="img\margherita.jpg"/>
+              <img src="img/margherita.jpg"/>
               <p><a href="info.php?pizza=0">Margherita pizza <img class="infoIcon" src="img/info.png"></a></p>
               <input type="hidden" name="pizza" value="Margherita pizza">
               <input type="hidden" name="prize" value="1200">
@@ -41,7 +38,7 @@
           </div>
           <div class="pizzaBox">
             <form method="post" action="pizza.php">
-              <img src="img\prosciutto.jpg"/>
+              <img src="img/prosciutto.jpg"/>
               <p><a href="info.php?pizza=1">Prosciutto pizza <img class="infoIcon" src="img/info.png"></a></p>
               <input type="hidden" name="pizza" value="Prosciutto pizza">
               <input type="hidden" name="prize" value="1150">
@@ -50,7 +47,7 @@
           </div>
           <div class="pizzaBox">
             <form method="post" action="pizza.php">
-              <img src="img\pepperoni.jpg"/>
+              <img src="img/pepperoni.jpg"/>
               <p><a href="info.php?pizza=2">Pepperoni pizza <img class="infoIcon" src="img/info.png"></a></p>
               <input type="hidden" name="pizza" value="Pepperoni pizza">
               <input type="hidden" name="prize" value="1220">

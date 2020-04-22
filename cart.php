@@ -4,9 +4,6 @@
 		exit;
 	}
 ?>
-<!DOCTYPE html>
-<html lang="hu">
-  <head>
     <title>Kosár</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" media="print" href="print.css">
@@ -19,7 +16,7 @@
 		<!--Logo -->
 	  <div class="pepeholder">
 		<a href="index.php">
-			<img class="pepe" src="img\pepelogo2.png" width="105px">
+			<img class="pepe" src="img/pepelogo2.png" width="105">
 			<h1 id="title">Pepe pizzéria</h1>
 		</a>
 	  </div>
@@ -59,7 +56,7 @@
 		<div id="kosar" class="content">
 			<div class="sidebar">
 			<h4>Sajtadagoló</h4>
-			<hr style="border: 1px solid grey; margin-left: 0;" width="50%">
+			<hr style="border: 1 solid grey; margin-left: 0;" width="50%">
 			Edámi +200Ft<br>
 			Parmezán +250Ft<br>
 			Cheddar +400Ft<br>
@@ -78,7 +75,7 @@
 							<tbody>";
 						foreach ($_SESSION["cart"] as $pizza){
 							echo "<tr>";
-							echo "<td align='left'>".$pizza["name"]."<br>";
+							echo "<td style='text-align: left;'>".$pizza["name"]."<br>";
 							if($pizza["toppings"] != []){
 								echo "<ul>";
 								foreach ($pizza["toppings"] as $topping){
@@ -123,7 +120,7 @@
 						</table>
 						";
 					} else {
-						echo "<p>Kosarad jelenleg üres!</p>";
+						echo "<p style='margin-left: 5'>A kosarad jelenleg üres!</p>";
 					}
 				?>
 			</div>

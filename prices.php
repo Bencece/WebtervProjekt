@@ -1,7 +1,4 @@
 <?php include_once("header.php"); ?>
-<!DOCTYPE html>
-<html lang="hu">
-  <head>
     <title>Áraink</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" media="print" href="print.css">
@@ -14,7 +11,7 @@
 			<!--Logo -->
 	  <div class="pepeholder">
 		<a href="index.php">
-			<img class="pepe" title="Pepe Pizzéria" src="img\pepelogo2.png" width="105px">
+			<img class="pepe" title="Pepe Pizzéria" src="img/pepelogo2.png" width="105">
 			<h1 id="title">Pepe pizzéria</h1>
 		</a>
 	  </div>
@@ -29,7 +26,7 @@
           <table id="table">
             <caption>Alap Pizza Árak</caption>
 			<colgroup>
-				</col>
+				<col>
 			</colgroup>
             <thead>
               <tr>
