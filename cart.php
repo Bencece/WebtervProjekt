@@ -42,8 +42,7 @@
 					if(isset($_POST["delete"])){
 						foreach ($_SESSION["cart"] as $pizza){
 							if($_POST["delete"] == $pizza["name"]){
-								$key = array_search($pizza["name"], $_SESSION["cart"]);
-								echo $key; //TODO
+								$key = array_search($pizza, $_SESSION["cart"]);
 								unset($_SESSION["cart"][$key]);
 							}
 						}
