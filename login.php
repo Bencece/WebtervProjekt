@@ -99,8 +99,10 @@
 			$username = ($_POST['username']);
 			$password = ($_POST['password']);
 			$uzenet = loginUser($username, $password);
-			echo "<script>alert('".$uzenet."');</script>";
-			header('Location: index.php');
+			echo "<script>
+				alert('".$uzenet."');
+				window.location.href = 'index.php';
+			</script>";
 		}
 	?>
   </body>
