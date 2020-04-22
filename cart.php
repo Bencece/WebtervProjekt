@@ -23,6 +23,9 @@
 			<h1 id="title">Pepe pizzéria</h1>
 		</a>
 	  </div>
+	  <?php
+	  	include_once("loginchecked.php");
+		?>
     </div>
 	<div class="contentBody">
       <!-- A menu beillesztése -->

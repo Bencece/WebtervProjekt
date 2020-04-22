@@ -2,6 +2,7 @@
 	include_once("header.php"); 
 	include_once("authentication.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="hu">
   <head>
@@ -21,14 +22,19 @@
 			<h1 id="title">Pepe pizzéria</h1>
 		</a>
 	  </div>
+	  <?php
+	  	include_once("loginchecked.php");
+		?>
 	</div>
 	<div class="contentBody">
       <!-- A menu beillesztése -->
-      <?php include_once("menu.php"); ?>
+      <?php include_once("menu.php");
+	  ?>
 		<div class="content loginPage">
 			<div class="login" id="login">
 				<div class="forms">
 					<form method="POST" action="login.php" enctype="multipart/form-data">
+					
 						<h2>Kérlek jelentkezz be</h2>
 						<p>
 							<label>Felhasználó:
