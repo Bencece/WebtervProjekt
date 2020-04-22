@@ -187,6 +187,13 @@ li a:hover{
 .pizzaBox button{
     float: right;
 }
+.pizzaBox a{
+	text-decoration: none;
+	color: white;
+}
+.infoIcon{
+	width: 20px !important;
+}
 /*Táblázatok formázása*/
 #table{
     width: 80%;
