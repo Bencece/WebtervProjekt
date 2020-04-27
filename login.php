@@ -79,8 +79,10 @@
 			$password2 = $_POST['regpassword2'];
 			$birthday = $_POST['birthday'];
 			$uzenet = registerUser($email, $username, $password, $password2, $birthday);
-			echo "<script>alert('".$uzenet."');</script>";
-			header('Location: index.php');
+			echo "<script>
+				alert('".$uzenet."');
+				window.location.href = 'login.php';
+			</script>";
 		}
 	?>
 	<?php
@@ -92,7 +94,7 @@
 			$uzenet = loginUser($username, $password);
 			echo "<script>
 				alert('".$uzenet."');
-				window.location.href = 'index.php';
+				window.location.href = 'login.php';
 			</script>";
 		}
 	?>

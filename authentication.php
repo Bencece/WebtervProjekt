@@ -61,7 +61,7 @@
                     } else return "Helytelen felhasználónév vagy jelszó!";
                 }
             }
-            return "Hiba a bejelentkezés során! (1)";
+            return "Helytelen felhasználónév vagy jelszó!";
         }
         return "Hiba a bejelentkezés során! (0)";
     }
