@@ -16,7 +16,7 @@
 		<!--Logo -->
 	  <div class="pepeholder">
 		<a href="index.php">
-			<img class="pepe" src="img/pepelogo2.png" width="105">
+			<img class="pepe" title="Pepe Pizzéria" src="img/pepelogo2.png" width="105">
 			<h1 id="title">Pepe pizzéria</h1>
 		</a>
 	  </div>
@@ -57,7 +57,7 @@
 		<div id="kosar" class="content">
 			<div class="sidebar">
 			<h4>Sajtadagoló</h4>
-			<hr style="border: 1 solid grey; margin-left: 0;" width="50%">
+			<hr id="mylittlehr">
 			Edámi +200Ft<br>
 			Parmezán +250Ft<br>
 			Cheddar +400Ft<br>
@@ -130,7 +130,7 @@
 						</table>
 						";
 					} else {
-						echo "<p style='margin-left: 5'>A kosarad jelenleg üres!</p>";
+						echo "<p style='margin-left: 5px'>A kosarad jelenleg üres!</p>";
 					}
 				?>
 			</div>

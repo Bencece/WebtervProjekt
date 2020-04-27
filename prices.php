@@ -23,16 +23,16 @@
       <!-- A menu beillesztése -->
       <?php include_once("menu.php"); ?>
       <div class="content">
-          <table id="table">
+          <table>
             <caption>Alap Pizza Árak</caption>
 			<colgroup>
-				<col>
+				<col span="3" />
 			</colgroup>
             <thead>
               <tr>
-                <td>Termék</td>
-                <td>Méret</td>
-                <td>Ár</td>
+                <th>Termék</th>
+                <th>Méret</th>
+                <th>Ár</th>
               </tr>
             </thead>
             <tbody>
@@ -54,7 +54,7 @@
             </tbody>
             <tfoot>
               <tr>
-                <td colspan="3">Az áraink forintban értendőek, és az áfát tartalmazzák.</td>
+                <th colspan="3">Az áraink forintban értendőek, és az áfát tartalmazzák.</th>
               </tr>
             </tfoot>
           </table>

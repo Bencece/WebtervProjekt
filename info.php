@@ -31,7 +31,7 @@
             ];
             if(isset($_GET["pizza"]) && $_GET["pizza"] >= 0 && $_GET["pizza"] <= 2){
                 echo "
-                <img class='pizzaInfo' src='".$pizzaInfo[$_GET["pizza"]]["img"]."'>
+                <img class='pizzaInfo' alt='PIZZA' src='".$pizzaInfo[$_GET["pizza"]]["img"]."'>
                 <h2>".$pizzaInfo[$_GET["pizza"]]["name"]."</h2>
                 <p>".$pizzaInfo[$_GET["pizza"]]["info"]."</p>
                 ";

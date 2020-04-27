@@ -1,9 +1,9 @@
 <nav class="menu" id="menu">
     <ul>
-        <li><a href="index.php" <?php echo setActive("index.php"); ?>>Főoldal</a></li>
-        <li><a href="pizza.php" <?php echo setActive("pizza.php"); ?>>Pizzáink</a></li>
-        <li><a href="prices.php" <?php echo setActive("prices.php"); ?>>Áraink</a></li>
-        <li><a href="contact.php" <?php echo setActive("contact.php"); ?>>Elérhetőség</a></li>
+        <li><a href='index.php' <?php echo setActive("index.php"); ?>>Főoldal</a></li>
+        <li><a href='pizza.php' <?php echo setActive("pizza.php"); ?>>Pizzáink</a></li>
+        <li><a href='prices.php' <?php echo setActive("prices.php"); ?>>Áraink</a></li>
+        <li><a href='contact.php' <?php echo setActive("contact.php"); ?>>Elérhetőség</a></li>
         <?php
             if(isset($_SESSION["user"])){
                 echo "<li><a href='cart.php'";
@@ -22,7 +22,7 @@
             }
             function setActive($page){
                 if ($page == basename($_SERVER['PHP_SELF'])){
-                    return "class='active'";
+                    return " class='active'";
                 }
                 return "";
             }

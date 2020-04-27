@@ -373,3 +373,9 @@ img{
 	border-radius: 5px 5px 5px 5px;
 	margin-bottom: 3px;
 }
+
+#mylittlehr{
+	 border: 1px solid grey; 
+	 margin-left: 0;
+	 width: 50%;
+}

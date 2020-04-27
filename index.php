@@ -24,7 +24,7 @@
       <?php include_once("menu.php"); ?>
       <div class="content">
         <h1>Üdvözlünk a Pepe Pizzéria weboldalán</h1>
-          <div class="szoveg" style="min-height: 300"><h3>A 100 éves múlt</h3>
+          <div class="szoveg" style="min-height: 300px"><h3>A 100 éves múlt</h3>
             <img src="img/pepefriends.png" title="Amikor a fiúk megtalálták a legfinomabb pizzát!" id="pic" width=200 style="float:right">
             Amikor 1920-ban megtörtént a <a href="https://hu.wikipedia.org/wiki/Trianoni_b%C3%A9keszerz%C5%91d%C3%A9s">Trianoni béka-kötés</a>, Pepe(ismertebb nevén <u><b>Pepenszki Pepega</b></u>) és barátai Olaszországba utaztak, hogy megtalálják a lelki békájukat. Ezen az úton, Bolognában találtak rá a legjobb pizzára. 
             <br>A pizza, amelyet ma is elkészíthetünk neked, már 100 éve hódít. Rendeld meg ma 	a kedvenc Pepe pizzádat. 1 óra alatt házhoz is visszük!
